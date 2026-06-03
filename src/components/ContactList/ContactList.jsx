@@ -1,5 +1,7 @@
 import { Component } from "react";
 
+import { Contact, Text } from './ContactList.styled'
+
 class ContactList extends Component {
   render() {
     const { contacts, onDelete, filter } = this.props;
@@ -11,14 +13,14 @@ class ContactList extends Component {
             name.toLowerCase().includes(filter.toLowerCase()),
           )
           .map(({ id, name, number }) => (
-            <li key={id}>
-              <p>
+            <Contact key={id}>
+              <Text>
                 {name}: {number}
-              </p>
+              </Text>
               <button type="button" onClick={() => onDelete(id)}>
                 Delete
               </button>
-            </li>
+            </Contact>
           ))}
       </ul>
     );
