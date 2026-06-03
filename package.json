@@ -1,7 +1,7 @@
 {
   "name": "react-phonebook",
   "homepage": "https://andrii-avramenko.github.io/react-hw10/",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "deploy": "gh-pages -d dist",
